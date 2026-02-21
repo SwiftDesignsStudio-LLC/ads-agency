@@ -212,3 +212,52 @@
 
 // Auto copyright year
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Dynamic Service Page Content
+const params = new URLSearchParams(window.location.search);
+const service = params.get("service");
+
+if (service) {
+  const title = document.querySelector(".heading-title");
+  const description = document.querySelector(".heading-title + p");
+  const mainHeading = document.querySelector("h2");
+
+  const services = {
+    website: {
+      title: "Business Website Design",
+      desc: "Professional websites designed to establish your business online and attract customers.",
+      content: "We design modern, mobile-friendly websites that build trust and clearly present your services to potential clients."
+    },
+    redesign: {
+      title: "Website Redesign",
+      desc: "Transform your outdated website into a modern, high-performing online presence.",
+      content: "We rebuild your current website with improved speed, mobile usability, and a modern professional look."
+    },
+    development: {
+      title: "Custom Web Development",
+      desc: "Advanced features and custom functionality tailored to your business.",
+      content: "Booking systems, forms, customer portals, and custom integrations built specifically for your workflow."
+    },
+    maintenance: {
+      title: "Website Maintenance & Support",
+      desc: "We keep your site secure, updated, and running smoothly.",
+      content: "Ongoing updates, security monitoring, content edits, and technical support so you never worry about your website."
+    },
+    "local-seo": {
+      title: "Google Business & Local SEO",
+      desc: "Help nearby customers find your business on Google Maps and search.",
+      content: "We optimize your local presence so your business appears when people search in your area."
+    },
+    seo: {
+      title: "Search Engine Optimization (SEO)",
+      desc: "Improve rankings and bring more organic traffic to your website.",
+      content: "Keyword optimization, on-page SEO, and performance improvements that increase visibility."
+    }
+  };
+
+  if (services[service]) {
+    title.textContent = services[service].title;
+    description.textContent = services[service].desc;
+    mainHeading.textContent = services[service].title;
+  }
+}
