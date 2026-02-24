@@ -53,7 +53,7 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Founder</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="booking.html" class="book-btn">Book Appointment</a></li>
+          <li><a href="#booking">Book Appointment</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -954,6 +954,48 @@
       </div>
     </section><!-- /Team Section -->
 
+    <!-- BOOKING SECTION -->
+    <section id="booking" class="home-booking">
+
+      <div class="container">
+
+        <div class="booking-intro-center">
+          <h2>Book a Free Website Strategy Consultation</h2>
+          <p>
+            Let’s talk about your business, your goals, and what your website should actually be doing for you.
+            In 30 minutes you’ll leave with clarity, direction, and a real plan.
+          </p>
+          <p class="booking-note">
+            No sales pressure. No obligation.
+          </p>
+        </div>
+
+        <div class="booking-home-wrapper">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/corey-swiftdesignsstudio/30min"
+            style="min-width:320px;height:700px;">
+          </div>
+        </div>
+
+        <script>
+          document.querySelectorAll(".booking-alt-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+              console.log("Calendly fallback clicked");
+            });
+          });
+        </script>
+
+        <div class="booking-home-alt">
+          <p class="booking-help-text">Having trouble loading the calendar?</p>
+
+          <a href="https://calendly.com/corey-swiftdesignsstudio/30min" target="_blank" rel="noopener"
+            class="primary-btn booking-alt-btn">
+
+            Open Booking Page
+          </a>
+        </div>
+
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -1200,6 +1242,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

@@ -5906,16 +5906,390 @@ MOBILE FIXES
   }
 }
 
-.floating-book {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #2f6cff;
-  color: #fff;
-  padding: 14px 20px;
-  border-radius: 999px;
+/* Booking CTA under calendar */
+
+.booking-cta {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.booking-help {
+  opacity: .7;
+  font-size: .95rem;
+  margin-bottom: 12px;
+}
+
+.booking-button {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
-  z-index: 9999;
+  font-size: 1rem;
+  transition: .25s ease;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, .35);
+}
+
+.booking-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(37, 99, 235, .45);
+}
+
+/* ===== Consultation Cards ===== */
+
+.consultation-details {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* grid layout */
+
+.consultation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* card */
+
+.consult-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 30px 26px;
+  border-radius: 14px;
+  text-align: left;
+  transition: .25s ease;
+  backdrop-filter: blur(6px);
+}
+
+/* hover effect */
+
+.consult-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, .5);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .35);
+}
+
+/* number icon */
+
+.consult-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* headings */
+
+.consult-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+/* text */
+
+.consult-card p {
+  opacity: .75;
+  line-height: 1.6;
+}
+
+/* mobile responsive */
+
+@media (max-width: 768px) {
+  .consultation-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FAQ Accordion */
+
+.booking-faq {
+  margin-top: 80px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-accordion {
+  margin-top: 30px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.15rem;
+  text-align: left;
+  padding: 20px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+}
+
+/* plus icon */
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 10px;
+  font-size: 1.6rem;
+  transition: .25s;
+}
+
+.faq-item.active .faq-question::after {
+  transform: rotate(45deg);
+}
+
+/* hidden answers */
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s ease;
+}
+
+.faq-answer p {
+  padding: 0 10px 18px 10px;
+  opacity: .8;
+  line-height: 1.6;
+}
+
+/* HEADER */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(4, 10, 20, .85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #cfd6e6;
+  text-decoration: none;
+  font-size: .95rem;
+  transition: .2s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.nav-cta {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #2f6df6;
+  color: white !important;
+  font-weight: 600;
+}
+
+/* FOOTER */
+
+.site-footer {
+  margin-top: 120px;
+  background: #040a14;
+  border-top: 1px solid rgba(255, 255, 255, .06);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #aab3c5;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-brand p {
+  color: #aab3c5;
+  max-width: 380px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, .05);
+  color: #7f8aa3;
+  font-size: .85rem;
+}
+
+/* Booking Section */
+
+.booking {
+  background: linear-gradient(180deg, #020617, #030b18);
+  padding: 90px 0;
+}
+
+.booking-card {
+  background: #0b1628;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, .45);
+}
+
+/* HOME BOOKING SECTION */
+
+.home-booking {
+  padding: 120px 0;
+  background: linear-gradient(180deg, #020617, #020617 60%, #030c1a);
+}
+
+.booking-intro-center {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 50px;
+}
+
+.booking-intro-center h2 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.booking-intro-center p {
+  opacity: .85;
+  line-height: 1.6;
+}
+
+.booking-note {
+  margin-top: 10px;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.booking-home-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #0b1628;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .45);
+}
+
+.booking-home-alt {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.booking-home-alt a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* ============================= */
+/* BOOKING PAGE ALT BUTTON       */
+/* ============================= */
+
+.booking-home-alt {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.booking-help-text {
+  color: #9fb3c8;
+  margin-bottom: 14px;
+  font-size: 15px;
+  letter-spacing: .3px;
+}
+
+/* Main CTA Button */
+.primary-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #2f80ff, #1c5cff);
+  box-shadow: 0 10px 25px rgba(47, 128, 255, 0.35);
+  transition: all .28s ease;
+  letter-spacing: .4px;
+}
+
+/* Hover animation */
+.primary-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(47, 128, 255, 0.55);
+  background: linear-gradient(135deg, #3a8dff, #2563ff);
+  color: #fff;
+}
+
+/* Click effect */
+.primary-btn:active {
+  transform: translateY(0px) scale(.98);
+  box-shadow: 0 6px 15px rgba(47, 128, 255, 0.35);
+}
+
+/* Mobile sizing */
+@media (max-width: 768px) {
+  .primary-btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 20px;
+    font-size: 16px;
+  }
 }
