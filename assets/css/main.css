@@ -5302,15 +5302,15 @@ section,
 }
 
 .btn-outline {
-  color: rgba(255,255,255,0.5);
-  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* ===== HERO SECONDARY BUTTON FIX ===== */
 
 .hero .btn-outline {
   color: #ffffff !important;
-  border: 1px solid rgba(255,255,255,0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
   background: transparent;
 }
 
@@ -5319,7 +5319,7 @@ section,
   color: #fff !important;
   border-color: #0d6efd !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(13,110,253,.35);
+  box-shadow: 0 6px 18px rgba(13, 110, 253, .35);
 }
 
 /* ===============================
@@ -5362,7 +5362,7 @@ VALUE CARDS (3 Boxes)
 
 .value-card {
   background: #0e1a26;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 18px;
   padding: 32px;
   height: 100%;
@@ -5373,7 +5373,7 @@ VALUE CARDS (3 Boxes)
 .value-card:hover {
   transform: translateY(-8px);
   border-color: #2f8cff;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
 }
 
 .value-card h4 {
@@ -5392,7 +5392,7 @@ VALUE CARDS (3 Boxes)
 .icon-box {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg,#2f8cff,#1c64ff);
+  background: linear-gradient(135deg, #2f8cff, #1c64ff);
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -5418,7 +5418,7 @@ VALUE CARDS (3 Boxes)
 /* Featured (middle card) */
 .value-card.featured {
   border: 1px solid #2f8cff;
-  background: linear-gradient(180deg,#0f1f2f,#0b1622);
+  background: linear-gradient(180deg, #0f1f2f, #0b1622);
 }
 
 .featured-badge {
@@ -5548,7 +5548,7 @@ MOBILE FIXES
   top: 0;
   bottom: 0;
   width: 2px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .process-step {
@@ -5567,14 +5567,14 @@ MOBILE FIXES
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: linear-gradient(135deg,#3b82f6,#60a5fa);
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
   color: #fff;
   font-weight: 700;
   font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 25px rgba(59,130,246,.35);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, .35);
 }
 
 /* step text */
@@ -5587,7 +5587,7 @@ MOBILE FIXES
 
 .step-content p {
   margin: 0;
-  color: rgba(255,255,255,.65);
+  color: rgba(255, 255, 255, .65);
   font-size: 15px;
   line-height: 1.6;
 }
@@ -5601,8 +5601,8 @@ MOBILE FIXES
   margin-bottom: 12px;
 }
 
-.capabilities-content > p {
-  color: rgba(255,255,255,.65);
+.capabilities-content>p {
+  color: rgba(255, 255, 255, .65);
   margin-bottom: 30px;
   line-height: 1.7;
 }
@@ -5634,7 +5634,7 @@ MOBILE FIXES
 .capability-item p {
   margin: 0;
   padding-left: 30px;
-  color: rgba(255,255,255,.65);
+  color: rgba(255, 255, 255, .65);
   font-size: 15px;
   line-height: 1.6;
 }
@@ -5650,7 +5650,7 @@ MOBILE FIXES
 
 /* outline button fix */
 #why-us .btn-outline {
-  border: 1px solid rgba(255,255,255,.25);
+  border: 1px solid rgba(255, 255, 255, .25);
   color: #e5e7eb;
   background: transparent;
   transition: all .25s ease;
@@ -5659,7 +5659,7 @@ MOBILE FIXES
 #why-us .btn-outline:hover {
   border-color: #3b82f6;
   color: #fff;
-  background: rgba(59,130,246,.15);
+  background: rgba(59, 130, 246, .15);
 }
 
 
@@ -5676,8 +5676,246 @@ MOBILE FIXES
   }
 }
 
-.hero-trust{
-  margin-top:8px;
-  font-size:14px;
-  color:rgba(255,255,255,.65);
+.hero-trust {
+  margin-top: 8px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, .65);
+}
+
+.book-btn {
+  background: #2bb673;
+  color: white !important;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.book-btn:hover {
+  background: #23965f;
+}
+
+/* =========================
+   BOOKING PAGE
+========================= */
+
+.booking-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 20px 120px;
+}
+
+/* Heading */
+
+.booking-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+
+/* Description */
+
+.booking-container p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 780px;
+  opacity: .9;
+  margin-bottom: 55px;
+}
+
+/* Calendly card */
+
+.calendly-wrapper {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 18px;
+  padding: 28px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, .35);
+}
+
+/* make calendly responsive */
+
+.calendly-inline-widget {
+  min-width: 100% !important;
+  height: 760px !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .booking-container {
+    padding: 60px 18px 90px;
+  }
+
+  .booking-container h1 {
+    font-size: 2rem;
+  }
+
+  .booking-container p {
+    font-size: 1rem;
+  }
+
+  .calendly-inline-widget {
+    height: 720px !important;
+  }
+}
+
+/* Booking Page Layout */
+.booking-hero {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.booking-intro {
+  margin-top: 15px;
+  opacity: .85;
+}
+
+.no-pressure {
+  margin-top: 18px;
+  font-weight: 600;
+  opacity: .9;
+}
+
+/* Consultation section */
+.consultation-details {
+  margin-top: 90px;
+}
+
+.consultation-details h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.consultation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.consult-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 28px;
+  border-radius: 14px;
+}
+
+.consult-item h3 {
+  margin-bottom: 10px;
+}
+
+/* Trust section */
+.consultation-trust {
+  margin-top: 80px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.consultation-trust ul {
+  margin-top: 25px;
+  padding-left: 18px;
+}
+
+.consultation-trust li {
+  margin-bottom: 12px;
+}
+
+/* Backup link */
+.backup-booking {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.backup-booking a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.booking-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px 20px;
+}
+
+/* GRID LAYOUT */
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 60px;
+  align-items: start;
+}
+
+/* LEFT COLUMN */
+.booking-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.booking-intro {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: .9;
+  margin-bottom: 25px;
+}
+
+.no-pressure {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* BENEFITS BOX */
+.ideal-client {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 40px;
+}
+
+.ideal-client ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* CALENDAR COLUMN */
+.booking-calendar {
+  position: sticky;
+  top: 110px;
+}
+
+.calendly-wrapper {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+/* MOBILE FIX */
+@media (max-width: 900px) {
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-calendar {
+    position: static;
+    margin-top: 40px;
+  }
+}
+
+.floating-book {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #2f6cff;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
+  z-index: 9999;
 }
