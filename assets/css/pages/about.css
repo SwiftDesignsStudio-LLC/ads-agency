@@ -1,0 +1,89 @@
+/* ======================================================
+ABOUT PAGE
+Swift Designs Studio
+====================================================== */
+
+/* Section title */
+
+.section-title h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.section-title .description-title {
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+/* Founder section */
+
+.founder-section {
+    margin-top: 40px;
+}
+
+.founder-content h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: var(--heading-color);
+}
+
+.founder-content p {
+    color: #b9c6d3;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+/* Benefits list */
+
+.founder-benefits {
+    list-style: none;
+    padding: 0;
+    margin-top: 18px;
+}
+
+.founder-benefits li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    color: #c7d3df;
+}
+
+.founder-benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* Founder image */
+
+.founder-image img {
+    border-radius: 18px;
+    max-width: 420px;
+    box-shadow: 0 25px 70px rgba(0,0,0,.55);
+}
+
+/* ======================================================
+MOBILE
+====================================================== */
+
+@media (max-width: 992px) {
+
+    .founder-content {
+        text-align: center;
+    }
+
+    .founder-image img {
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    .booking-intro-center h2 {
+        font-size: 26px;
+    }
+}

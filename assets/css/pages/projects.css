@@ -1,0 +1,150 @@
+/* =====================================================
+PORTFOLIO PAGE
+Swift Designs Studio
+===================================================== */
+
+.portfolio {
+    position: relative;
+}
+
+/* GRID */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* CARD */
+
+.portfolio-card {
+    background: var(--surface-color);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.05);
+    transition: all .3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+    box-shadow: 0 22px 60px rgba(0,0,0,.45);
+}
+
+/* IMAGE */
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.portfolio-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+/* CONTENT */
+
+.card-content {
+    padding: 22px 22px 26px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
+
+.card-content p {
+    color: #b9c6d3;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* TECH STACK TAGS */
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.tech-stack span {
+    background: rgba(32,139,244,.12);
+    color: var(--accent-color);
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* VIEW PROJECT LINK */
+
+.view-project {
+    margin-top: auto;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--accent-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: .25s;
+}
+
+.view-project i {
+    transition: transform .25s;
+}
+
+.view-project:hover {
+    color: #ffffff;
+}
+
+.view-project:hover i {
+    transform: translateX(4px);
+}
+
+/* LIGHT BACKGROUND SUPPORT */
+
+.light-background {
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,.02),
+        rgba(255,255,255,.05)
+    );
+}
+
+/* =====================================================
+MOBILE & TABLET
+===================================================== */
+
+@media (max-width: 1200px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-content {
+        text-align: center;
+    }
+
+    .tech-stack {
+        justify-content: center;
+    }
+}
