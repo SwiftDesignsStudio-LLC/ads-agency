@@ -1,0 +1,22 @@
+/* ===============================
+Swift Designs Studio CSS System
+=============================== */
+
+/* ---------- FOUNDATION ---------- */
+@import url("./base.css");
+
+/* ---------- LAYOUT ---------- */
+@import url("./layout.css");
+
+/* ---------- GLOBAL COMPONENTS ---------- */
+@import url("./components.css");
+@import url("./components/header.css");
+@import url("./components/footer.css");
+
+/* ---------- PAGE STYLES ---------- */
+@import url("./pages/home.css");
+@import url("./pages/services.css");
+@import url("./pages/projects.css");
+@import url("./pages/process.css");
+@import url("./pages/about.css");
+@import url("./pages/contact.css");

@@ -1,0 +1,122 @@
+/* ======================================================
+PROCESS PAGE
+Swift Designs Studio
+====================================================== */
+
+/* Section spacing refinement */
+.section {
+    position: relative;
+}
+
+/* Step headings */
+
+.section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--heading-color);
+}
+
+/* body text */
+
+.section p {
+    color: #b9c6d3;
+    line-height: 1.7;
+}
+
+/* lists */
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 14px;
+}
+
+.section ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+    color: #c7d3df;
+}
+
+/* checkmarks */
+
+.section ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* Icon panels (right side cards) */
+
+.section .border.rounded {
+    background: var(--surface-color);
+    border: 1px solid rgba(255, 255, 255, .06) !important;
+    border-radius: 16px !important;
+    padding: 38px 24px !important;
+    transition: .3s ease;
+}
+
+.section .border.rounded i {
+    color: var(--accent-color);
+}
+
+.section .border.rounded p {
+    margin-bottom: 0;
+    color: #c7d3df;
+}
+
+.section .border.rounded:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .45);
+    border-color: var(--accent-color) !important;
+}
+
+/* alternating background */
+.light-background {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, .02),
+            rgba(255, 255, 255, .05));
+}
+
+/* CTA section */
+
+.section.text-center h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.section.text-center p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .section {
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .section ul li {
+        padding-left: 0;
+    }
+
+    .section ul li::before {
+        position: static;
+        margin-right: 6px;
+    }
+
+    .border.rounded {
+        margin-top: 20px;
+    }
+}
